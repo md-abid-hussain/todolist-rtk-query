@@ -1,8 +1,7 @@
-
+import TodoList from "./features/todo/TodoList"
 function App() {
   return (
-    <main>
-    </main>
+    <TodoList />
   )
 }
 
