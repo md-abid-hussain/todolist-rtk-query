@@ -17,6 +17,16 @@
   -webkit-text-size-adjust: 100%;
 }
 
+img,
+svg {
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -29,11 +39,14 @@ a:hover {
 body {
   min-width: 320px;
   min-height: 100vh;
+  font-size: 1.25rem;
+  padding-inline: 0.5rem;
 }
 
 h1 {
   font-size: 3em;
   line-height: 1.1;
+  text-align: center;
 }
 
 .submit {
@@ -72,4 +85,53 @@ h1 {
 
 .p-half {
   padding: 0.5rem;
+}
+
+.outside {
+  position: absolute;
+  left: -9999999px;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin-right: 0.5rem;
+}
+
+.todo {
+  flex: 1;
+}
+
+.mt-half {
+  margin-top: 0.5rem;
+}
+
+.trash {
+  font: inherit;
+  padding-inline: 1rem;
+  color: #213547;
+  border: none;
+}
+
+.trash:hover {
+  color: rgb(219, 26, 26);
+}
+
+.new-todo {
+  display: flex;
+  flex: 1;
+}
+
+.new-todo > input {
+  flex: 1;
+}
+
+main {
+  max-width: 900px;
+  margin-inline: auto;
 }
